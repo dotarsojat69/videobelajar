@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 120px;
+  gap: 36px;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(58, 53, 65, 0.12);
+}
+
+body {
+  background: #fffdf3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: "DM Sans";
+  font-weight: 500;
+}
+
+.ava {
+  width: 40px;
+  border-radius: 10px;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 65px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("image1.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-subtitle {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 14.5px;
+  color: #c1c2c4;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cta-button {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+  background-color: #3ecf4c;
+  border-radius: 10px;
+  padding: 10px 26px;
+  color: #ffffff;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  margin-top: 2rem;
+}
+
+/* Course Section */
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.courses h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  color: #222325;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.68);
+}
+
+.category-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 5px;
+}
+
+.tab {
+  padding: 12px 36px 12px 0;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.68);
+  text-decoration: none;
+}
+
+.tab.active {
+  color: #f64920;
+  position: relative;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 52px;
+  height: 6px;
+  background-color: #f64920;
+  border-radius: 10px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.course-card {
+  width: 384px;
+  background-color: #ffffff;
+  border: 1px solid rgba(58, 53, 65, 0.12);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.course-image {
+  width: 344px;
+  height: 193px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.course-content h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #222325;
+  margin-top: 16px;
+}
+
+.card-description {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.68);
+  margin-top: 8px;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.instructor-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.instructor-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.instructor-name {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: #222325;
+}
+
+.instructor-title {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.68);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-rating-value {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.68);
+  text-decoration: underline;
+}
+
+.fa-star {
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.price {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  color: #3ecf4c;
+  text-align: center;
+}
+
+/* Newsletter Section */
+.newsletter {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 65px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("newsletter-bg.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.newsletter-content {
+  width: Hug (525px) px;
+  height: Hug (216px) px;
+  gap: 40px;
+  opacity: 0px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+h4 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 35.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  padding: 0px 5px 0px 5px;
+}
+
+.email-input {
+  flex-grow: 1;
+  border: none;
+  padding: 0 24px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.68);
+  border-radius: 10px;
+}
+
+.subscribe-button {
+  background: #ffbd3a;
+  color: white;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  width: Fixed (1, 440px) px;
+  height: Hug (427px) px;
+  padding: 60px 120px 60px 120px;
+  gap: 20px;
+  border-top: 1px solid #d7d7d7;
+}
+
+.footer-content {
+  display: flex;
+  width: Fill (1, 200px) px;
+  height: Hug (199px) px;
+  gap: 0px;
+  justify-content: space-between;
+  opacity: 0px;
+}
+
+.footer-brand {
+  width: Hug (352px) px;
+  height: Hug (190px) px;
+  gap: 16px;
+  opacity: 0px;
+}
+
+.title {
+  width: 365px;
+  height: 50px;
+  gap: 0px;
+  opacity: 0px;
+  color: #222325;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.address {
+  color: #222325;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 5px;
+}
+
+.phone {
+  margin-top: 5px;
+  color: #222325;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: Hug (485px) px;
+  height: Hug (199px) px;
+  gap: 48px;
+  opacity: 0px;
+}
+
+.footer-column h3 {
+  margin-bottom: 1rem;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.footer-column a {
+  display: block;
+  color: var(--text-light);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 2px solid #d7d7d7;
+}
+
+.copyright {
+  color: #222325;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  border: 2px 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navigation,
+  .hero,
+  .courses,
+  .newsletter,
+  .footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation,
+  .hero,
+  .courses,
+  .newsletter,
+  .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-tabs {
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
